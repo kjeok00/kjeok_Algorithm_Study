@@ -10,6 +10,7 @@ int solution(vector<int> bandage, int health, vector<vector<int>> attacks) {
     int maxHealth = health;
     int playerHealth = health;
 
+    
     int time = 1;   //현재 시간
     int attackIndex = 0;
     int healTime = 0;   //시전시간 계산
@@ -46,6 +47,7 @@ int solution(vector<int> bandage, int health, vector<vector<int>> attacks) {
                 playerHealth = maxHealth;
         }
     }
+
 
     answer = playerHealth;
 
