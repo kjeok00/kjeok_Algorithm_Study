@@ -1,13 +1,16 @@
 import java.util.Scanner;
 
 public class Solution {
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        int input = sc.nextInt();
+        String result = "";
         
-        if (n % 2 == 0)
-            System.out.println(n + " is even");
+        if (input % 2 == 0)
+            result = "even";
         else
-            System.out.println(n + " is odd");
+            result = "odd";
+        
+        System.out.println(input + " is " + result);
     }
 }
